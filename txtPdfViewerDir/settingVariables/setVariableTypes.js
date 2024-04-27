@@ -6,8 +6,9 @@ txtPdfPath:
 			${LIST_PATH}="${txtPdfViewerTxtPdfListFilePath}"
 			?${LIMIT_NUM}=10
 		|
-			initialPath=`${STORAGE}/Downloads`
+			initialPath=`${STORAGE}/Download`
 			?suffix=`${TXT_SUFFIX}&${PDF_SUFFIX}`
+			?macro=FROM_RECENT_DIR
 		,
 TTS_PLAY:
 	BTN:HL=
